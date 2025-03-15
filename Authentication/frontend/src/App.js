@@ -2,16 +2,21 @@
 import React from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/footer/footer';  // Ensure lowercase import
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import Shop from './Pages/shop';
 
 function App() {
   return (
     <div>
+      <BrowserRouter>
       <Navbar />
       
-      {/* Your page content here */}
-      <h1>Welcome to SmartHomeCare</h1>
+      <Routes>
+      <Route path='/' element={<Shop/>}/>
+      </Routes>
 
-      <Footer />  {/* Make sure to use <Footer /> even if the file is named `footer.js` */}
+      <Footer />
+      </BrowserRouter>  {/* Make sure to use <Footer /> even if the file is named `footer.js` */}
     </div>
   );
 }
