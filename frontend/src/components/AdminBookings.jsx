@@ -130,7 +130,6 @@ const AdminBookings = () => {
         </div>
       </div>
 
-      {/* 📌 Table wrapper to fix overflow & rounding */}
       <div className="table-container">
         <table>
           <thead>
