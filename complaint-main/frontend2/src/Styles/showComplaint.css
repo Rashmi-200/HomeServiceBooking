@@ -1,0 +1,25 @@
+.complaint-list-container {
+    text-align: center;
+  }
+  
+  .complaint-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .complaint-card {
+    width: 200px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .complaint-card:hover {
+    background-color: #e9ecef;
+  }
+  

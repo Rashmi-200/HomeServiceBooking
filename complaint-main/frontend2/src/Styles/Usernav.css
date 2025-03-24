@@ -1,0 +1,36 @@
+.complaintf {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  list-style: none;
+  margin: 0;
+}
+
+.ComplaintMan {
+  background-color: #2384e4;
+  border: 1px solid #b8e1fd;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.ComplaintMan:hover {
+  background-color: #6bb5ff;
+}
+
+.complaintman {
+  text-decoration: none;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.complaintman h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+
+
+  

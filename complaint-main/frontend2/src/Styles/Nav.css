@@ -1,0 +1,46 @@
+.complaintmng {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+}
+
+.first-row, .second-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.first-column, .second-column {
+  flex: 1;
+  text-align: center;
+}
+
+.ComplaintManagement {
+  background-color: #2d90e7;
+  border: 1px solid #032856;
+  border-radius: 5px;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.ComplaintManagement:hover {
+  background-color: #acc5e6;
+}
+
+.complaintmanagement {
+  text-decoration: none;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.complaintmanagement h1 {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+
+  

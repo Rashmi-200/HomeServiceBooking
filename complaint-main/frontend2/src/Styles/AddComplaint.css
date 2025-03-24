@@ -1,0 +1,106 @@
+/* AddComplaint.css */
+
+/* Container to center the form */
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #F7F8FF;
+  }
+  
+  /* Heading for the form */
+  h2 {
+    font-size: 24px;
+    color: #2a5298;
+    margin-bottom: 20px;
+  }
+  
+  /* Error message styling */
+  p {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Styling for the form container */
+  fieldset {
+    border: 2px solid #2a5298;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    background-color: #DEEBF7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2a5298;
+  }
+  
+  /* Form input fields and select elements */
+  div input,
+  div select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #C8DBEF;
+    background-color: #ffffff;
+    font-size: 16px;
+  }
+  
+  /* Form labels */
+  label {
+    font-size: 16px;
+    color: #2a5298;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Buttons styling */
+  button {
+    background-color: #6dd5ed;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4c8bf5;
+  }
+  
+  /* Button for editing complaint */
+  button[type="button"] {
+    background-color: #ff758c;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #ff5a6c;
+  }
+  .complaint-Card {
+    display: inline-flexbox;
+    flex-wrap: wrap; /* Allows wrapping if screen size is small */
+    gap: 16px; /* Space between complaint cards */
+    justify-content: flex-start; /* Aligns cards to the left */
+    align-items: stretch; /* Makes sure all cards align evenly */
+  }
+  
+  
+  /* Ensure proper responsiveness */
+  @media (max-width: 768px) {
+    fieldset {
+      padding: 15px;
+      width: 90%;
+    }
+    
+    button {
+      width: 100%;
+    }
+  }
