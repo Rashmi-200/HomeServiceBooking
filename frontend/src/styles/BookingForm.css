@@ -1,0 +1,123 @@
+body {
+  background-color: #e1ecf4; /* soft sky blue background */
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.booking-form {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #4773b189;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.booking-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #2c3e50;
+}
+
+.booking-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-form label {
+  font-weight: 600;
+  color: #16304a;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #293f5a;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  border-color: #11527d;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.2);
+}
+
+.booking-form .time-slots {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* 8 columns */
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.slot {
+  padding: 10px 0;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.slot.available {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+
+.slot.available:hover {
+  background-color: #d0e7fa;
+}
+
+.slot.selected {
+  background-color: #050985;
+  color: white;
+  font-weight: bold;
+}
+
+.slot.booked {
+  background-color: #bdc3c7;
+  color: white;
+  cursor: not-allowed;
+}
+
+.booking-form button[type="submit"] {
+  margin-top: 15px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #050985;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.booking-form button[type="submit"]:hover {
+  background-color: #216a91;
+}
+
+.booking-form p {
+  font-weight: 500;
+  color: #333;
+  margin: 5px 0;
+}
+
+.booking-form p:nth-of-type(1),
+.booking-form p:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c3e50;
+  background-color: #f0f8ff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  width: fit-content;
+}
